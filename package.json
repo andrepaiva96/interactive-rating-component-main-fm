@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "css": "node-sass --output-style compressed --precision 6 -w src/ -o public_html/dist/"
+    },
+    "dependencies": {
+        "node-sass": "^7.0.0"
+    }
+}
+
