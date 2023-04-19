@@ -1,7 +1,132 @@
+//Fonts
+p {
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.5625rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+button {
+    all: unset;
+    display: inline-block;
+    color: hsl(216, 12%, 54%);
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    cursor: pointer;
+}
+
+// Styling
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
     a {
         color: hsl(228, 45%, 44%);
     }
+}
+
+.container {
+    width: 314px;
+    padding: 2rem;
+    border-radius: 15px;
+    flex-flow: column wrap;
+    background: linear-gradient(0deg, #17223b 0%, #2e446b 100%);
+    // background: linear-gradient(0deg, #17223b 20%, #2e446b 100%);
+
+    .rating_state {
+        display: block;
+        img {
+            padding: 1.0625rem;
+            border-radius: 100%;
+            background-color: #2e446b;
+        }
+
+        .number_row {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-rows: 1fr;
+            margin: 16px 0px 16px 0px;
+            justify-content: space-between;
+            grid-template-columns: minmax(0,50px) minmax(0,50px) minmax(0,50px) minmax(0,50px) minmax(0,50px);
+            grid-template-areas: "one two three four five";
+
+            & button {
+                margin: 0rem;
+                width: auto;
+                height: 3.125rem;
+                text-align: center;
+                border-radius: 100%;
+                background-color: #2e446b;
+
+                &:hover{
+                    color: hsl(0, 0%, 100%);
+                    background-color: hsl(25, 97%, 53%);
+                }
+
+                &:focus{
+                    color: hsl(0, 0%, 100%);
+                    background-color: hsl(217, 12%, 63%);
+                }
+            }
+        }
+
+        .submit_button {
+            color: hsl(0, 0%, 100%);
+            padding: .625rem;
+            margin-top: 1rem;
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: 1px;
+            border-radius: 1.25rem;
+            width: calc(100% - 1rem);
+            background-color: hsl(25, 97%, 53%);
+
+            &:hover{
+                color: hsl(25, 97%, 53%);
+                background-color: hsl(0, 0%, 100%);
+            }
+
+        }
+    }
+
+    .thank_you_state{
+        flex-direction: column;
+        text-align: center;
+        & img{
+            align-self: center;
+        }
+
+        & .rating_number_div{
+            background-color: #2e446b;
+            border-radius: 2rem;
+            align-self: center;
+            margin: 13px 0px 13px 0px;
+            padding: 5px 15px 5px 15px;
+            
+            & p{
+                color: hsl(25, 97%, 53%);
+                text-align: center;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+.thank_you_state {
+    display: none;
 }
