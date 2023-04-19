@@ -19,3 +19,6 @@
 # Ignore node modules
 ########################
 node_modules/*
+
+# My own files to ignore
+fiveserver.config.js
