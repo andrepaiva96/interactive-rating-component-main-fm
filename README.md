@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - GitHub Repo: [https://github.com/andrepaiva96/interactive-rating-component-main-fm](https://github.com/andrepaiva96/interactive-rating-component-main-fm)
-- Live Site URL: [Add live site URL here](#)
+- Live Site URL: [https://iridescent-cocada-e6e884.netlify.app/](https://iridescent-cocada-e6e884.netlify.app/)
 
 ## My process
 
